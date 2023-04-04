@@ -8,15 +8,11 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header__container"></div>
       <a class="main-header__logo logo" href="#">
         <img class="logo__img" width="185" height="96" src="img/logo.svg" alt="Логотип SEDONA.">
       </a>
       <nav class="main-header__menu menu">
         <button class="menu__button">
-          <svg class="menu__icon" width="23" height="22" aria-hidden="true" focusable="false" fill="currentColor">
-            <use xlink:href="img/icons/sprite.svg#hamburger-menu"></use>
-          </svg>
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <ul class="menu__list">
@@ -52,25 +48,7 @@
               Автор фото:
               <span class="photos__autor-name">Борис</span>
             </p>
-            <button class="photos__button-like button-like" type="button">
-              <svg class="button-like__icon" width="23" height="21" aria-hidden="true" focusable="false" fill="currentColor">
-                <use xlink:href="img/icons/sprite.svg#like-icon"></use>
-              </svg>
-              1350
-              <span class="visually-hidden">Лайков.</span>
-            </button>
-          </li>
-          <li class="photos__item">
-            <img class="photos__img" width="280" height="280" src="img/catalog/photo-1-mobile.jpg.png" alt="Дорога на закате.">
-            <h2 class="photos__title">Неродные просторы</h2>
-            <p class="photos__autor">
-              Автор фото:
-              <span class="photos__autor-name">Борис</span>
-            </p>
-            <button class="photos__button-like button-like" type="button">
-              <svg class="button-like__icon" width="23" height="21" aria-hidden="true" focusable="false" fill="currentColor">
-                <use xlink:href="img/icons/sprite.svg#like-icon"></use>
-              </svg>
+            <button class="photos__button-like" type="button">
               1350
               <span class="visually-hidden">Лайков.</span>
             </button>
@@ -82,10 +60,7 @@
               Автор фото:
               <span class="photos__autor-name">Сергей</span>
             </p>
-            <button class="photos__button-like button-like" type="button">
-              <svg class="button-like__icon" width="23" height="21" aria-hidden="true" focusable="false" fill="currentColor">
-                <use xlink:href="img/icons/sprite.svg#like-icon"></use>
-              </svg>
+            <button class="photos__button-like" type="button">
               143
               <span class="visually-hidden">Лайков.</span>
             </button>
@@ -97,10 +72,7 @@
               Автор фото:
               <span class="photos__autor-name">Петр</span>
             </p>
-            <button class="photos__button-like button-like" type="button">
-              <svg class="button-like__icon" width="23" height="21" aria-hidden="true" focusable="false" fill="currentColor">
-                <use xlink:href="img/icons/sprite.svg#like-icon"></use>
-              </svg>
+            <button class="photos__button-like" type="button">
               96
               <span class="visually-hidden">Лайков.</span>
             </button>
@@ -112,15 +84,23 @@
               Автор фото:
               <span class="photos__autor-name">Антон</span>
             </p>
-            <button class="photos__button-like button-like" type="button">
-              <svg class="button-like__icon" width="23" height="21" aria-hidden="true" focusable="false" fill="currentColor">
-                <use xlink:href="img/icons/sprite.svg#like-icon"></use>
-              </svg>
+            <button class="photos__button-like" type="button">
               254
               <span class="visually-hidden">Лайков.</span>
             </button>
           </li>
         </ul>
+      </section>
+      <section class="video">
+        <h2 class="visually-hidden">Видеопрезентация</h2>
+        <p class="video__title title">Все еще сомневаетесь?</p>
+        <p class="video__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <div class="video__video-wrapper">
+          <img class="video__img" src="img/video-mobile.jpg.jpg" alt="Стоп-кадр видео плеера.">
+          <button class="video__play-button play-button" type="button">
+            <span class="visually-hidden">Воспроизвести видео.</span>
+          </button>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
@@ -131,33 +111,22 @@
         <li class="social-item">
           <a class="social-link" href="#">
             <span class="visually-hidden">В контакте.</span>
-            <svg class="social__icon" width="24" height="24">
-              <use xlink:href="img/icons/sprite.svg#vk"></use>
-            </svg>
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="#">
             <span class="visually-hidden">Telegram.</span>
-            <svg class="social__icon" width="24" height="24">
-              <use xlink:href="img/icons/sprite.svg#telegram"></use>
-            </svg>
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="#">
             <span class="visually-hidden">YouTube.</span>
-            <svg class="social__icon" width="24" height="24" aria-hidden="true" focusable="false" fill="currentColor">
-              <use xlink:href="img/icons/sprite.svg#youtube"></use>
-            </svg>
           </a>
         </li>
       </ul>
       <a class="main-footer__developer-link" href="#">
         Разработано
-        <svg class="main-footer__developer-icon" width="27" height="35" aria-hidden="true" focusable="false" fill="currentColor">
-          <use xlink:href="img/icons/sprite.svg#htmlacademy"></use>
-        </svg>
+        <span class="visually-hidden">в htmlacademy</span>
       </a>
     </footer>
   </body>
