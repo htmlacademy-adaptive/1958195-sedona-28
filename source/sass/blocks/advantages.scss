@@ -1,0 +1,26 @@
+@use "../mixins.scss";
+@use "./base/var.scss";
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__list {
+  padding: 0;
+}
+
+.advantages__title {
+  text-align: center;
+  margin: 0;
+  padding: 0 20px;
+  margin-bottom: 35px;
+}
+
+.advantages__description {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0 20px;
+  color: var.$color-title;
+}

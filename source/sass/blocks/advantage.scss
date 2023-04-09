@@ -1,0 +1,52 @@
+@use "../mixins.scss";
+@use "./base/var.scss";
+
+.advantage__item {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &--devider {
+    border-bottom: 1px solid var.$color-border-grey;
+    // margin-bottom: 24px;
+  }
+}
+
+.advantage__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 52px 20px;
+  color: var.$text-white;
+  background-color: var.$base-blue;
+}
+
+.advantage__title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.advantage__number {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+.advantage__description {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.advantage__img {
+  display: inline;
+}
+
+.advantage__addition-list {
+
+}

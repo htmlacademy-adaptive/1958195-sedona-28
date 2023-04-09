@@ -1,1 +1,26 @@
-// Начните писать стили здесь
+// base styles
+@use "./base/base.scss";
+@use "./base/fonts.scss";
+@use "./base/var.scss";
+@use "./base/visually-hidden.scss";
+
+// mixins
+@use "./mixins.scss";
+
+// blocks styles
+@use "./blocks/body.scss";
+@use "./blocks/container.scss";
+@use "./blocks/header.scss";
+@use "./blocks/logo.scss";
+@use "./blocks/menu.scss";
+@use "./blocks/main.scss";
+@use "./blocks/hero.scss";
+@use "./blocks/advantages.scss";
+@use "./blocks/advantage.scss";
+@use "./blocks/title.scss";
+@use "./blocks/description.scss";
+@use "./blocks/addition.scss";
+@use "./blocks/offer.scss";
+@use "./blocks/map.scss";
+@use "./blocks/footer.scss";
+@use "./blocks/social.scss";
