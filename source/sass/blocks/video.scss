@@ -1,0 +1,22 @@
+@use "./base/var.scss";
+
+.video__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 39px;
+}
+
+.video__title {
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+.video__description {
+  text-align: center;
+  padding: 0 22px;
+
+  // paragraph overflow
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,50 @@
+.modal {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+
+  &--mistake-active,
+  &--message-active {
+    display: flex;
+  }
+}
+
+.modal__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px 40px 35px;
+  background-color: #ffffff;
+}
+
+.modal__text-wrapper {
+  margin-bottom: 28px;
+}
+
+.modal__title {
+  margin-bottom: 25px;
+}
+
+.title {
+  text-align: center;
+}
+
+.modal__description {
+  text-align: center;
+
+  // paragraph overflow
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+// .modal__button {
+// }

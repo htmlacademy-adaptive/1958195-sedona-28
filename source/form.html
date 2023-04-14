@@ -3,45 +3,49 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <title>HTML Academy: Седона - Оставьте свой отзыв</title>
   </head>
-  <body>
-    <header class="main-header">
-      <a class="main-header__logo logo" href="#">
+  <body class="body container">
+    <header class="header">
+      <a class="header__logo logo" href="index.html">
         <img class="logo__img" width="185" height="96" src="img/logo.svg" alt="Логотип SEDONA.">
       </a>
-      <nav class="main-header__menu menu">
-        <button class="menu__button">
+      <nav class="header__menu menu">
+        <button class="menu__button"><!-- Добавить модификатор для смены бургера на крестик - "menu__button--active" -->
+          <span class="menu__button-icon"></span>
           <span class="visually-hidden">Открыть меню.</span>
         </button>
-        <ul class="menu__list">
+        <ul class="menu__list"><!-- Добавить модификатор для открытия меню - "menu__list--active" -->
           <li class="menu__item">
-            <a class="menu__link menu__link--current" href="#">Главная</a>
+            <a class="menu__link" href="index.html" aria-current="page">Главная</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Фото и видео</a>
+            <a class="menu__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Форма Отзыва</a>
+            <a class="menu__link" href="#" aria-current="page">Форма Отзыва</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">HTML ACADEMY</a>
+            <a class="menu__link" href="https://htmlacademy.ru">HTML ACADEMY</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-container">
-      <section class="content-header">
-        <div class="content-header__img-wrapper">
-          <img class="header-img__img" width="229" height="39" src="img/SEDONA.svg" alt="Надпись седона.">
+    <main class="main">
+      <section class="main__main-header main-header">
+        <div class="main-header__img-wrapper">
+          <img class="main-header__img" width="229" height="39" src="img/SEDONA.svg" alt="Надпись седона.">
         </div>
-        <h1 class="content-header__title title">Оставьте свой отзыв</h1>
-        <p class="content-header__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <div class="main-header__content-wrapper">
+          <h1 class="main-header__title title">Оставьте свой отзыв</h1>
+          <p class="main-header__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
       </section>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form__group">
-          <legend class="form__legend">Представтесь:</legend>
+        <fieldset class="form__group form__group--devider">
+          <legend class="form__legend title">Представтесь:</legend>
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label" for="name">Имя*:</label>
@@ -57,8 +61,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__group">
-          <legend class="form__legend">Контактная информация:</legend>
+        <fieldset class="form__group form__group--devider">
+          <legend class="form__legend title">Контактная информация:</legend>
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label" for="phone">Контактный телефон*:</label>
@@ -70,8 +74,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__group">
-          <legend class="form__legend">Ваше общее впечатление:</legend>
+        <fieldset class="form__group form__group--devider">
+          <legend class="form__legend title">Ваше общее впечатление:</legend>
           <ul class="form__list">
             <li class="form__item">
               <input class="visually-hidden" type="radio" id="positive" name="impression" value="positive" checked>
@@ -90,8 +94,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__group">
-          <legend class="form__legend">Посещенные достопримечательности:</legend>
+        <fieldset class="form__group form__group--devider">
+          <legend class="form__legend title">Посещенные достопримечательности:</legend>
           <ul class="form__list">
             <li class="form__item">
               <input class="visually-hidden" type="checkbox" id="devils-bridge" name="devils-bridge" checked>
@@ -116,52 +120,58 @@
           </ul>
         </fieldset>
         <fieldset class="form__group">
-          <legend class="form__legend">Опишите свои эмоции:</legend>
+          <legend class="form__legend title">Опишите свои эмоции:</legend>
           <textarea class="form__input input" id="emotions" name="emotions"></textarea>
         </fieldset>
-        <button class="form__button button" type="submit">Отправить отзыв</button>
-        <span class="fotm__attention">* — обязательные поля</span>
+        <div class="form__button-wrapper">
+          <button class="form__button button" type="submit">Отправить отзыв</button>
+          <span class="fotm__attention">* — обязательные поля</span>
+        </div>
       </form>
     </main>
-    <footer class="main-footer">
-      <p class="main-footer__hashtag-wrapper">
-        <a class="main-footer__hashtag" href="#">#visitsedona</a>
-      </p>
-      <ul class="main-footer__social-list social">
+    <footer class="footer">
+      <div class="footer__hashtag-wrapper">
+        <a class="footer__hashtag" href="#">#visitsedona</a>
+      </div>
+      <ul class="footer__social-list social">
         <li class="social-item">
-          <a class="social-link" href="#">
+          <a class="social-link social-link--icon-vk" href="#">
             <span class="visually-hidden">В контакте.</span>
           </a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="#">
+          <a class="social-link social-link--icon-telegram" href="#">
             <span class="visually-hidden">Telegram.</span>
           </a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="#">
+          <a class="social-link social-link--icon-youtube" href="#">
             <span class="visually-hidden">YouTube.</span>
           </a>
         </li>
       </ul>
-      <a class="main-footer__developer-link" href="#">
+      <a class="footer__developer-link" href="#">
         Разработано
         <span class="visually-hidden">в htmlacademy</span>
       </a>
     </footer>
     <!-- Модальное окно с ошибкой -->
-    <div class="modal modal--mistake">
+    <div class="modal modal--mistake"> <!-- Чтобы открыть модальное окно - добавить класс "modal--mistake-active"-->
       <section class="modal__wrapper">
-        <h2 class="modal__title title">Что то пошло не так!</h2>
-        <p class="modal__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <div class="modal__text-wrapper">
+          <h2 class="modal__title title">Что то пошло не так!</h2>
+          <p class="modal__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        </div>
         <button class="modal__button button" type="button">OK</button>
       </section>
     </div>
     <!-- Модальное окно с сообщением -->
-    <div class="modal modal--message">
+    <div class="modal modal--message"><!-- Чтобы открыть модальное окно - добавить класс "modal--message-active" -->
       <section class="modal__wrapper">
-        <h2 class="modal__title title">Ваш отзыв отправлен!</h2>
-        <p class="modal__description description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="modal__text-wrapper">
+          <h2 class="modal__title title">Ваш отзыв отправлен!</h2>
+          <p class="modal__description description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
         <button class="modal__button button" type="button">Закрыть окно</button>
       </section>
     </div>

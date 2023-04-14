@@ -1,0 +1,22 @@
+@use "./base/var.scss";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var.$color-paragraph;
+  margin: 0;
+  background-color: var.$bg-white;
+}

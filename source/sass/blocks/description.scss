@@ -1,0 +1,11 @@
+@use "./base/var.scss";
+
+.description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  color: var.$color-paragraph;
+}

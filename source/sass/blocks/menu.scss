@@ -1,0 +1,189 @@
+@use "./base/mixins.scss";
+@use "./base/var.scss";
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+// burger button (open)
+.menu__button {
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+  transition: all 0.3s ease;
+  position: relative;
+  align-self: flex-end;
+  width: 23px;
+  height: 22px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 23px;
+    height: 4px;
+    background-color: var.$base-blue;
+  }
+}
+
+.menu__button::before {
+  bottom: 0;
+}
+
+.menu__button::after {
+  top: 0;
+}
+
+.menu__button-icon {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var.$base-blue;
+  }
+}
+
+.menu__button:hover .menu__button-icon::before,
+.menu__button:hover::before,
+.menu__button:hover::after {
+  background-color: var.$base-blue--hover;
+}
+
+.menu__button:active .menu__button-icon::before,
+.menu__button:active::before,
+.menu__button:active::after {
+  background-color: var.$base-blue--hover;
+}
+
+// burger button (close)
+.menu__button--active .menu__button-icon::before {
+  transform: scale(0);
+}
+
+.menu__button--active {
+  &::before {
+    transform: rotate(45deg);
+    bottom: 9px;
+    background-color: var.$burger-color-close;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    top: 9px;
+    background-color: var.$burger-color-close;
+  }
+}
+
+.menu__button--active:hover::before,
+.menu__button--active:hover::after,
+.menu__button--active:active::before,
+.menu__button--active:active::after {
+  background-color: var.$burger-color-close;
+}
+
+.menu__button--active:hover {
+  opacity: 0.6;
+}
+
+.menu__button--active:active {
+  opacity: 0.3;
+}
+
+// menu
+.menu__list {
+  @include mixins.list-reset;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+
+  &--active {
+    display: flex;
+  }
+}
+
+.menu__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: var.$text-white;
+  padding: 17px 0 12px;
+  background-color: var.$base-blue;
+  transition: all 0.5s ease;
+
+  // light
+  &::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    top: 0;
+    background: lighten($color: var.$base-blue, $amount: 6);
+  }
+
+  // shadow
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    background: darken($color: var.$base-blue, $amount: 11);
+  }
+
+  &:hover,
+  &:active {
+    background-color: var.$base-blue--hover;
+
+    // light over the button
+    &::before {
+      box-shadow: 0 -1px 0 0 lighten($color: var.$base-blue, $amount: 10);
+      background-color: darken($color: var.$base-blue, $amount: 20);
+    }
+  }
+
+  &:active {
+    background-color: var.$base-blue--active;
+  }
+}
+
+.menu__link[aria-current="page"] {
+  color: rgba(255, 255, 255, 0.3);
+
+  &:hover {
+    cursor: default;
+    background-color: var.$base-blue;
+  }
+
+  &:hover::before {
+    box-shadow: none;
+    background: lighten($color: var.$base-blue, $amount: 6);
+  }
+}
+
+// shadow at the end of menu items
+.menu__item:last-child .menu__link {
+  box-shadow: inset 0 -20px 8px -17px rgba(0, 0, 0, 0.3);
+}

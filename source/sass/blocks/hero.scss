@@ -1,0 +1,14 @@
+@use "./base/var.scss";
+
+.hero {
+  padding: 90px 0 85px;
+  background: url("../../img/hero-devider.svg"), url("../../img/bg-hero-mobile.jpg");
+  background-color: var.$color-without-img;
+  background-repeat: no-repeat;
+  background-position: center bottom, center;
+}
+
+.hero__img {
+  display: block;
+  margin: 0 auto;
+}

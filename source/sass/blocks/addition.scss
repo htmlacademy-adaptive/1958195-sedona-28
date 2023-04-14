@@ -1,0 +1,25 @@
+@use "./base/mixins.scss";
+@use "./base/var.scss";
+
+.addition {
+  @include mixins.list-reset;
+  padding: 0 20px;
+}
+
+.addition__item {
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.addition__title {
+  margin-bottom: 16px;
+}
+
+.addition__desctiption {
+
+  // paragraph overflow
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
