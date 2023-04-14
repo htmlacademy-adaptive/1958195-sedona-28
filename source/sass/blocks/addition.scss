@@ -13,11 +13,12 @@
 }
 
 .addition__title {
+  text-align: start;
   margin-bottom: 16px;
 }
 
 .addition__desctiption {
-
+  margin: 0;
   // paragraph overflow
   &:not(:last-child) {
     margin-bottom: 15px;
