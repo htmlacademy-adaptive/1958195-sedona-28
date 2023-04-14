@@ -1,0 +1,18 @@
+@use "./base/mixins.scss";
+@use "./base/var.scss";
+
+.social {
+  @include mixins.list-reset;
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  gap: 6px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: var.$base-blue;
+}

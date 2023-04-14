@@ -1,0 +1,42 @@
+@use "./base/mixins.scss";
+@use "./base/var.scss";
+
+.photos__list {
+  @include mixins.list-reset;
+  display: grid;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.photos__item {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 20px 25px 20px;
+  border-bottom: 1px solid var.$bg-gray;
+
+  &:first-child {
+    padding: 0 20px 25px 20px;
+  }
+}
+
+.photos__img {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.photos__title {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var.$title-black;
+  margin-bottom: 1px;
+}
+
+.photos__autor {
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.photos__button-like {
+  align-self: flex-start;
+}

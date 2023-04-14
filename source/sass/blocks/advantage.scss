@@ -1,4 +1,4 @@
-@use "../mixins.scss";
+@use "./base/mixins.scss";
 @use "./base/var.scss";
 
 .advantage__item {
@@ -6,29 +6,52 @@
   flex-direction: column;
   align-content: center;
 
-  &:not(:last-child) {
-    margin-bottom: 24px;
+  &--town {
+    margin-bottom: 46px;
   }
+}
 
-  &--devider {
-    border-bottom: 1px solid var.$color-border-grey;
-    // margin-bottom: 24px;
-  }
+.advantage__content-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 20px;
+  background-color: var.$bg-gray;
 }
 
 .advantage__text-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 52px 20px;
+  padding: 58px 20px 40px;
   color: var.$text-white;
   background-color: var.$base-blue;
 }
 
+.advantage__item:not(:last-child) .advantage__content-wrapper::before {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  content: "";
+  height: 1px;
+  width: calc(100% - 40px);
+  background: rgba($color: #000000, $alpha: 0.1);
+}
+
+.advantage__item--devil-bridge .advantage__text-wrapper {
+  padding: 37px 20px;
+}
+
 .advantage__title {
   text-align: center;
-  margin: 0;
   margin-bottom: 11px;
+}
+
+// it paints text on a blue background
+.advantage__item--town .advantage__title,
+.advantage__item--devil-bridge .advantage__title,
+.advantage__item--town .advantage__description,
+.advantage__item--devil-bridge .advantage__description {
+  color: var.$text-white;
 }
 
 .advantage__number {
@@ -39,14 +62,16 @@
 
 .advantage__description {
   text-align: center;
-  margin: 0;
-  margin-bottom: 24px;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 .advantage__img {
-  display: inline;
-}
+  display: block;
 
-.advantage__addition-list {
-
+  &--has-content {
+    margin-bottom: 24px;
+  }
 }

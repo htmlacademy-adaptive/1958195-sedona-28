@@ -1,0 +1,57 @@
+@use "./base/var.scss";
+@use "./base/mixins.scss";
+
+.form__group {
+  border: none;
+  margin: 0;
+  margin-bottom: 56px;
+  padding: 0;
+
+  &--devider {
+    border-bottom: 1px solid var.$bg-gray;
+    margin-bottom: 39px;
+    padding-bottom: 39px;
+  }
+}
+
+.form__legend {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form__list {
+  @include mixins.list-reset;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.form__label {
+  text-transform: uppercase;
+  padding-left: 16px;
+}
+
+.form__input {
+  padding: 16px;
+}
+
+// .form__mark {
+// }
+
+.form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+// .form__button {
+// }
+
+.fotm__attention {
+  align-self: flex-end;
+}

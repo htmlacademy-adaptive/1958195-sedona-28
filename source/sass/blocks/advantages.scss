@@ -1,4 +1,4 @@
-@use "../mixins.scss";
+@use "./base/mixins.scss";
 @use "./base/var.scss";
 
 .advantages {
@@ -6,21 +6,43 @@
   flex-direction: column;
 }
 
-.advantages__list {
-  padding: 0;
+.advantages__devider-wrapper {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 768px;
+    height: 37px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -37px;
+    background: url("../../img/devider-white.svg") no-repeat center;
+  }
+}
+
+.advantages__main-text-wrapper {
+  margin-bottom: 16px;
 }
 
 .advantages__title {
   text-align: center;
   margin: 0;
-  padding: 0 20px;
+  padding: 0 25px;
   margin-bottom: 35px;
 }
 
 .advantages__description {
   text-align: center;
   margin: 0;
-  margin-bottom: 34px;
   padding: 0 20px;
-  color: var.$color-title;
+
+  // paragraph overflow
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.advantages__list {
+  padding: 0;
 }

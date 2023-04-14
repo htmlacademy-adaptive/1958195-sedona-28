@@ -5,9 +5,11 @@
 @use "./base/visually-hidden.scss";
 
 // mixins
-@use "./mixins.scss";
+@use "./base/mixins.scss";
 
 // blocks styles
+@use "./blocks/title.scss";
+@use "./blocks/description.scss";
 @use "./blocks/body.scss";
 @use "./blocks/container.scss";
 @use "./blocks/header.scss";
@@ -17,10 +19,13 @@
 @use "./blocks/hero.scss";
 @use "./blocks/advantages.scss";
 @use "./blocks/advantage.scss";
-@use "./blocks/title.scss";
-@use "./blocks/description.scss";
 @use "./blocks/addition.scss";
 @use "./blocks/offer.scss";
 @use "./blocks/map.scss";
-@use "./blocks/footer.scss";
 @use "./blocks/social.scss";
+@use "./blocks/footer.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/photos.scss";
+@use "./blocks/video.scss";
+@use "./blocks/form.scss";
+@use "./blocks/modal.scss";

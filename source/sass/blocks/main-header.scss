@@ -1,0 +1,36 @@
+@use "./base/var.scss";
+@use "./base/mixins.scss";
+
+.main-header__img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 158px;
+  height: 100%;
+  background: url("../../img/hero-devider.svg"), url("../../img/main-header-bg.jpg");
+  background-repeat: no-repeat;
+  background-color: var.$color-without-img;
+  background-position: center bottom;
+  margin-bottom: 30px;
+}
+
+.main-header__img {
+  display: block;
+}
+
+.main-header__content-wrapper {
+  padding-bottom: 44px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var.$bg-gray;
+}
+
+.main-header__title {
+  text-align: center;
+  color: var.$title-black;
+  margin-bottom: 25px;
+}
+
+.main-header__description {
+  text-align: center;
+  padding: 0 20px;
+}

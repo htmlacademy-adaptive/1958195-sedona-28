@@ -1,4 +1,31 @@
+@use "./base/var.scss";
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offer__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 33px;
+}
+
 .offer__title {
+  font-size: 21px;
   text-align: center;
   padding: 0 20px;
+  margin-bottom: 20px;
+  color: var.$title-black;
+}
+
+.offer__description {
+  text-align: center;
+  padding: 0 20px;
+
+  // paragraph overflow
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }

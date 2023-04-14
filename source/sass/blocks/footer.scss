@@ -1,1 +1,32 @@
-// код
+@use "./base/mixins.scss";
+@use "./base/var.scss";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 33px 20px;
+}
+
+.footer__hashtag-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.footer__hashtag {
+  display: inline-flex;
+
+  // paragraph overflow
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.footer__social-list {
+  margin-bottom: 30px;
+}
+
+.footer__developer-link {
+  display: inline-flex;
+}
