@@ -105,16 +105,16 @@
   content: "";
   width: 22px;
   height: 16px;
-  background-color: var.$input-checked-color;
   left: 12px;
   top: 15px;
-  background: url("../../img/icons/tick.svg") 50% 50%;
+  background: url("../../img/icons/tick.svg") no-repeat 50% 50%;
 }
 
 .form__textarea {
   min-height: 160px;
   min-width: 100%;
   max-width: min-content;
+  align-self: center;
 }
 
 .form__button-wrapper {
@@ -221,7 +221,7 @@
     align-self: center;
   }
 
-  .form__group--attractions .form__list{
+  .form__group--attractions .form__list {
     display: grid;
     grid-template-columns: repeat(2, 280px);
     row-gap: 16px;
@@ -256,7 +256,11 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .form__group--attractions .form__list{
+  .form__group--attractions .form__list {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .form__textarea {
+    min-width: 768px;
   }
 }
