@@ -7,5 +7,9 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
-  color: var.$color-paragraph;
+  color: var.$base-text-color;
+
+  &--br {
+    display: block;
+  }
 }

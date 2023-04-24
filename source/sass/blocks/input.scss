@@ -1,0 +1,30 @@
+@use "./base/mixins.scss";
+@use "./base/var.scss";
+
+.input {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var.$input-text-color;
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var.$input-bg-color;
+  background-color: var.$input-bg-color;
+
+  &:hover {
+    border: 2px solid var.$input-bg-color;
+    background-color: var.$input-bg-color--hover;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 2px solid var.$input-bg-color;
+    background-color: var.$input-bg-color--active;
+  }
+
+  &::placeholder {
+    color: var.$input-text-color;
+    opacity: 0.3;
+  }
+}
