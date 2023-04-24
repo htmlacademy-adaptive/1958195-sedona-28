@@ -16,7 +16,9 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: var.$color-paragraph;
+  color: var.$base-text-color;
   margin: 0;
-  background-color: var.$bg-white;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
 }

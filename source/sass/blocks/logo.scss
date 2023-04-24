@@ -6,3 +6,14 @@
   min-height: 96px;
   transform: translateX(-50%);
 }
+
+.logo__img {
+  display: block;
+}
+
+
+@media (min-width: 768px) {
+  .logo {
+    z-index: 1;
+  }
+}

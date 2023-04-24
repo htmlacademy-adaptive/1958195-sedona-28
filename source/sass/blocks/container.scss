@@ -1,5 +1,11 @@
+@use "./base/var.scss";
+
 .container {
-  max-width: 320px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0;
+  overflow: hidden;
+  background-color: var.$base-bg-color;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }

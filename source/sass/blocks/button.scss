@@ -1,0 +1,33 @@
+@use "./base/var.scss";
+
+.button {
+  cursor: pointer;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  transition: background-color 0.3s ease;
+  color: var.$button-text-color;
+  background-color: var.$base-color;
+
+  &:hover {
+    background-color: var.$base-color--hover;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var.$base-color;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    background-color: var.$base-color--active;
+  }
+
+  &:disabled {
+    cursor: default;
+    background-color: var.$button-disabled;
+  }
+}

@@ -8,10 +8,11 @@
 @use "./base/mixins.scss";
 
 // blocks styles
+@use "./blocks/container.scss";
 @use "./blocks/title.scss";
+@use "./blocks/input.scss";
 @use "./blocks/description.scss";
 @use "./blocks/body.scss";
-@use "./blocks/container.scss";
 @use "./blocks/header.scss";
 @use "./blocks/logo.scss";
 @use "./blocks/menu.scss";
@@ -27,5 +28,6 @@
 @use "./blocks/main-header.scss";
 @use "./blocks/photos.scss";
 @use "./blocks/video.scss";
+@use "./blocks/button.scss";
 @use "./blocks/form.scss";
 @use "./blocks/modal.scss";

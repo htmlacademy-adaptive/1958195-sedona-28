@@ -1,4 +1,10 @@
-.main__map {
-  margin-bottom: 8px;
-  min-height: 350px;
+.map {
+  width: 100%;
+}
+
+.map__iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  display: block;
 }

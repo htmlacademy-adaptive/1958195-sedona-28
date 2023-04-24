@@ -4,15 +4,29 @@
 .social {
   @include mixins.list-reset;
   display: grid;
-  grid-template-columns: repeat(3, 48px);
+  grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
   gap: 6px;
+  max-width: 264px;
 }
 
-.social-link {
+.social__link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 48px;
   height: 48px;
-  background-color: var.$base-blue;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--vk {
+    background-image: url("../../img/icons/vk.svg");
+  }
+
+  &--telegram {
+    background-image: url("../../img/icons/telegram.svg");
+  }
+
+  &--youtube {
+    background-image: url("../../img/icons/youtube.svg");
+  }
 }
