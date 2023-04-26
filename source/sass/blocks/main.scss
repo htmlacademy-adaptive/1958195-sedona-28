@@ -35,7 +35,11 @@
     margin-bottom: 60px;
   }
 
-  .main__header-inner {
+  .main__header-form {
+    margin-bottom: 108px;
+  }
+
+  .main__header-catalog {
     margin-bottom: 84px;
   }
 
@@ -62,6 +66,18 @@
 }
 
 @media (min-width: 980px) {
+  .main__header-form {
+    margin-bottom: 68px;
+  }
+
+  .main__header-form .hero {
+    margin-bottom: 115px;
+  }
+
+  .main__header-catalog {
+    margin-bottom: 88px;
+  }
+
   .main__photos {
     margin-bottom: 60px;
   }
