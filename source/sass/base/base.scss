@@ -22,3 +22,13 @@ body {
   flex-direction: column;
   background-color: #f2f2f2;
 }
+
+.br {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .br {
+    display: block;
+  }
+}

@@ -1,14 +1,11 @@
 @use "./base/var.scss";
 
-.video {
-  padding: 0 20px;
-}
-
 .video__text-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 39px;
+  padding: 0 25px;
 }
 
 .video__title {
@@ -30,11 +27,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 20px;
 }
 
 .video__img {
   width: 100%;
   max-width: 800px;
+  min-height: 177px;
 }
 
 .video__play-button {
@@ -56,7 +55,6 @@
   }
 }
 
-
 @media (min-width: 640px) {
   .video {
     padding: 0 60px;
@@ -66,12 +64,26 @@
     margin-bottom: 89px;
   }
 
+  .video__video-wrapper {
+    padding: 0;
+  }
+
   .video__title {
     font-size: 30px;
+    margin-bottom: 32px;
   }
 
   .video__description {
     max-width: 445px;
   }
+
+  .video__img {
+    height: 500px;
+  }
 }
 
+@media (min-width: 960px) {
+  .video {
+    padding: 0 120px;
+  }
+}

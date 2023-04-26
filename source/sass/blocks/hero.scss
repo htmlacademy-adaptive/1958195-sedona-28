@@ -5,13 +5,39 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 90px 19px 85px;
   background: url("../../img/hero-devider.svg"), url("../../img/bg-hero-mobile.jpg");
   background-color: var.$color-without-img;
   background-repeat: no-repeat;
   background-position: center bottom, center top;
+
+  &--inner {
+    padding: 52px 46px 67px;
+    background-position: center bottom;
+  }
 }
 
 .hero__img {
   width: 461px;
   display: block;
+}
+
+@media (min-width: 640px) {
+  .hero {
+    padding: 78px 60px 91px;
+
+    &--inner {
+      padding: 95px 60px 117px;
+    }
+  }
+}
+
+@media (min-width: 980px) {
+  .hero {
+    padding: 78px 120px 90px;
+
+    &--inner {
+      padding: 101px 120px 120px;
+    }
+  }
 }
