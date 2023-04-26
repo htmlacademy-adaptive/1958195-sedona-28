@@ -1,5 +1,4 @@
 .main__hero {
-  padding: 90px 20px 83px;
   margin-bottom: 34px;
 }
 
@@ -9,19 +8,18 @@
 
 .main__offer {
   margin-bottom: 49px;
-  padding: 0 20px;
 }
 
 .main__map {
   margin-bottom: 8px;
 }
 
-.main__main-header {
-  margin-bottom: 30px;
-}
-
 .main__photos {
   margin-bottom: 16px;
+}
+
+.main__header-form {
+  margin-bottom: 24px;
 }
 
 .main__form {
@@ -30,20 +28,23 @@
 
 @media (min-width: 640px) {
   .main__hero {
-    padding: 77px 33px 46px;
-    margin-bottom: 34px;
+    margin-bottom: 47px;
   }
 
   .main__advantages {
     margin-bottom: 60px;
   }
 
-  .main__main-header {
-    margin-bottom: 81px;
+  .main__header-form {
+    margin-bottom: 108px;
+  }
+
+  .main__header-catalog {
+    margin-bottom: 84px;
   }
 
   .main__photos {
-    margin-bottom: 57px;
+    margin-bottom: 56px;
   }
 
   .main__video {
@@ -64,14 +65,32 @@
   }
 }
 
-@media (min-width: 768px) {
-  .main__hero {
-    margin-bottom: 59px;
-  }
-}
-
 @media (min-width: 980px) {
+  .main__header-form {
+    margin-bottom: 68px;
+  }
+
+  .main__header-form .hero {
+    margin-bottom: 115px;
+  }
+
+  .main__header-catalog {
+    margin-bottom: 88px;
+  }
+
+  .main__photos {
+    margin-bottom: 60px;
+  }
+
   .main__video {
     margin-bottom: 84px;
+  }
+
+  .main__hero {
+    margin-bottom: 59px;
+
+    &--inner {
+      padding: 101px 120px 120px;
+    }
   }
 }

@@ -21,7 +21,7 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: black;
+  color: var.$hashtag-color;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -32,7 +32,7 @@
 }
 
 .footer__social-list {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .footer__developer-wrapper {
@@ -46,11 +46,17 @@
   text-decoration: none;
   text-transform: uppercase;
   color: var.$base-title-color;
-  padding: 10px 40px 10px 10px;
+  padding: 10px 40px 10px 0;
   background: url("../../img/icons/htmlacademy.svg") no-repeat right center;
 
   &:not(:last-child) {
     margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 640px) {
+  .footer {
+    padding: 36px 60px;
   }
 }
 
@@ -59,7 +65,6 @@
   .footer {
     display: grid;
     grid-template-columns: 1fr 264px 1fr;
-    padding: 36px 60px;
   }
 
   .footer__hashtag-wrapper {
@@ -75,7 +80,7 @@
   }
 }
 
-@media (min-width: 980px) {
+@media (min-width: 1080px) {
   .footer {
     padding: 36px 120px;
   }

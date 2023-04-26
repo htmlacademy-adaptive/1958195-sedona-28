@@ -4,25 +4,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 18px;
 }
 
 .offer__text-wrapper {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
   margin-bottom: 33px;
 }
 
 .offer__title {
   font-size: 21px;
-  text-align: center;
-  // padding: 0 20px;
   margin-bottom: 20px;
 }
 
 .offer__description {
-  text-align: center;
-  max-width: 475px;
-
   // paragraph overflow
   &:not(:last-child) {
     margin-bottom: 15px;
@@ -35,7 +30,11 @@
   padding: 16px 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
+  .offer {
+    padding: 0 60px;
+  }
+
   .offer__title {
     font-size: 30px;
     margin-bottom: 31px;
@@ -43,5 +42,11 @@
 
   .offer__text-wrapper {
     margin-bottom: 45px;
+  }
+}
+
+@media (min-width: 980px) {
+  .offer {
+    padding: 0 120px;
   }
 }

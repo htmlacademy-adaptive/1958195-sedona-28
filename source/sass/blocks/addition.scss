@@ -6,22 +6,22 @@
 }
 
 .addition__item {
-  padding: 9px 20px 0 67px;
+  padding: 9px 20px 0 65px;
 
   &:not(:last-child) {
     margin-bottom: 24px;
   }
 
   &--housing {
-    background: url("../../img/icons/housing-mobile.svg") no-repeat left 20px top -0;
+    background: url("../../img/icons/housing-mobile.svg") no-repeat left 18px top 0;
   }
 
   &--food {
-    background: url("../../img/icons/food-mobile.svg") no-repeat left 20px top 0;
+    background: url("../../img/icons/food-mobile.svg") no-repeat left 18px top 0;
   }
 
   &--souvenirs {
-    background: url("../../img/icons/souvenirs-mobile.svg") no-repeat left 20px top 0;
+    background: url("../../img/icons/souvenirs-mobile.svg") no-repeat left 18px top 0;
   }
 }
 

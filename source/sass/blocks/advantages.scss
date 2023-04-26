@@ -9,9 +9,10 @@
 
 .advantages__header-wrapper {
   position: relative;
+  text-align: center;
   margin-bottom: 15px;
-  max-width: 520px;
   padding: 0 30px;
+  width: 100%;
 
   &::before {
     position: absolute;
@@ -26,15 +27,10 @@
 }
 
 .advantages__title {
-  text-align: center;
-  margin: 0;
   margin-bottom: 37px;
 }
 
 .advantages__description {
-  text-align: center;
-  margin: 0;
-
   // paragraph overflow
   &:not(:last-child) {
     margin-bottom: 15px;
@@ -45,8 +41,9 @@
   @include mixins.list-reset;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .advantages__header-wrapper {
+    padding: 0 60px;
     margin-bottom: 55px;
 
     &::before {
@@ -56,5 +53,11 @@
 
   .advantages__title {
     font-size: 21px;
+  }
+}
+
+@media (min-width: 980px) {
+  .advantages__header-wrapper {
+    padding: 0 120px;
   }
 }
