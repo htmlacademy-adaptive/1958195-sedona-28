@@ -24,6 +24,20 @@
   color: var.$hashtag-color;
   text-decoration: none;
   text-transform: uppercase;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var.$base-color;
+    outline-offset: 2px;
+  }
 
   // paragraph overflow
   &:not(:last-child) {
@@ -48,6 +62,19 @@
   color: var.$base-title-color;
   padding: 10px 40px 10px 0;
   background: url("../../img/icons/htmlacademy.svg") no-repeat right center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var.$base-color;
+    outline-offset: 2px;
+  }
 
   &:not(:last-child) {
     margin-bottom: 15px;
