@@ -43,7 +43,7 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease;
   width: 48px;
   height: 54px;
   opacity: 0.7;
@@ -52,6 +52,16 @@
 
   &:hover {
     opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  &:focus-visible {
+    opacity: 1;
+    outline: 2px solid var.$base-color;
+    outline-offset: 2px;
   }
 }
 

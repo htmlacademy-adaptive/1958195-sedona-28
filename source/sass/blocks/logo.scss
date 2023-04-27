@@ -1,3 +1,5 @@
+@use "./base/var.scss";
+
 .logo {
   position: absolute;
   top: 0;
@@ -5,12 +7,16 @@
   min-width: 185px;
   min-height: 96px;
   transform: translateX(-50%);
+
+  &:focus-visible {
+    outline: 2px solid var.$base-color;
+    outline-offset: 2px;
+  }
 }
 
 .logo__img {
   display: block;
 }
-
 
 @media (min-width: 768px) {
   .logo {
