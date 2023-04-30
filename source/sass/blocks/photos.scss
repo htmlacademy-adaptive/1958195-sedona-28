@@ -51,7 +51,7 @@
   padding: 11px 0 0 37px;
   align-self: flex-start;
   border: none;
-  background: transparent url("../../img/icons/like-icon.svg") no-repeat bottom 2px left;
+  background: transparent url("../img/icons/like-icon.svg") no-repeat bottom 2px left;
 }
 
 @media (min-width: 640px) {
@@ -145,6 +145,6 @@
 
   .photos__button-like {
     color: var.$light-text-color;
-    background-image: url("../../img/icons/like-icon-white.svg");
+    background-image: url("../img/icons/like-icon-white.svg");
   }
 }

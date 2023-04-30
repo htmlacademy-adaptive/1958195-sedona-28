@@ -108,7 +108,7 @@
   height: 16px;
   left: 12px;
   top: 15px;
-  background: url("../../img/icons/tick.svg") no-repeat 50% 50%;
+  background: url("../img/icons/tick.svg") no-repeat 50% 50%;
 }
 
 // hover
@@ -134,7 +134,7 @@
 }
 
 .form__control-input[type="checkbox"]:checked:disabled ~ .form__label::after {
-  background: url("../../img/icons/tick-disabled.svg");
+  background: url("../img/icons/tick-disabled.svg");
 }
 
 .form__textarea {
