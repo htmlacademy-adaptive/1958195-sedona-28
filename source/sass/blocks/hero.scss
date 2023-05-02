@@ -6,14 +6,20 @@
   justify-content: center;
   align-items: center;
   padding: 90px 19px 85px;
+  color: #ffffff;
   background: url("../img/hero-devider.svg"), url("../img/bg-hero-mobile.jpg");
   background-color: var.$color-without-img;
   background-repeat: no-repeat;
-  background-position: center bottom, center top;
+  background-position: center bottom -1px, center top;
+  background-size: fill, cover;
 
   &--inner {
     padding: 52px 46px 67px;
     background-position: center bottom;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-devider.svg"), url("../img/bg-hero-mobile@2x.jpg");
   }
 }
 
@@ -25,9 +31,14 @@
 @media (min-width: 640px) {
   .hero {
     padding: 78px 60px 91px;
+    background-image: url("../img/hero-devider.svg"), url("../img/bg-hero-tablet.jpg");
 
     &--inner {
       padding: 95px 60px 117px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-devider.svg"), url("../img/bg-hero-tablet@2x.jpg");
     }
   }
 }
@@ -35,9 +46,14 @@
 @media (min-width: 980px) {
   .hero {
     padding: 78px 120px 90px;
+    background-image: url("../img/hero-devider.svg"), url("../img/bg-hero-desktop.jpg");
 
     &--inner {
       padding: 101px 120px 120px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-devider.svg"), url("../img/bg-hero-desktop@2x.jpg");
     }
   }
 }

@@ -1,12 +1,6 @@
 @use "./base/mixins.scss";
 @use "./base/var.scss";
 
-.advantages {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .advantages__header-wrapper {
   position: relative;
   text-align: center;
