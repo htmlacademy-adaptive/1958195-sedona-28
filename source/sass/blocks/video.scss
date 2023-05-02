@@ -31,6 +31,7 @@
 }
 
 .video__img {
+  object-fit: contain;
   width: 100%;
   max-width: 800px;
   min-height: 177px;
