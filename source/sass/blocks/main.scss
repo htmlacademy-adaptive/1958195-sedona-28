@@ -1,5 +1,5 @@
 .main__hero {
-  margin-bottom: 34px;
+  margin-bottom: 33px;
 }
 
 .main__advantages {
@@ -23,12 +23,12 @@
 }
 
 .main__form {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 @media (min-width: 640px) {
   .main__hero {
-    margin-bottom: 47px;
+    margin-bottom: 48px;
   }
 
   .main__advantages {
@@ -40,7 +40,7 @@
   }
 
   .main__header-catalog {
-    margin-bottom: 84px;
+    margin-bottom: 80px;
   }
 
   .main__photos {
@@ -74,6 +74,14 @@
     margin-bottom: 115px;
   }
 
+  .main__advantages {
+    margin-bottom: 64px;
+  }
+
+  .main__offer {
+    margin-bottom: 66px;
+  }
+
   .main__header-catalog {
     margin-bottom: 88px;
   }
@@ -87,7 +95,7 @@
   }
 
   .main__hero {
-    margin-bottom: 59px;
+    margin-bottom: 60px;
 
     &--inner {
       padding: 101px 120px 120px;

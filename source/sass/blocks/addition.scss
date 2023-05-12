@@ -13,16 +13,20 @@
   }
 
   &--housing {
-    background: url("../img/icons/housing-mobile.svg") no-repeat left 18px top 0;
+    background: url("../img/stack.svg#housing-mobile") no-repeat left 16px top -2px / 43px 43px;
   }
 
   &--food {
-    background: url("../img/icons/food-mobile.svg") no-repeat left 18px top 0;
+    background: url("../img/stack.svg#food-mobile") no-repeat left 16px top -2px / 43px 43px;
   }
 
   &--souvenirs {
-    background: url("../img/icons/souvenirs-mobile.svg") no-repeat left 18px top 0;
+    background: url("../img/stack.svg#souvenirs-mobile") no-repeat left 16px top -2px / 43px 43px;
   }
+}
+
+.addition__br-tablet {
+  display: none;
 }
 
 .addition__title {
@@ -45,23 +49,27 @@
   }
 
   .addition__item {
-    padding: 154px 33px 61px;
+    padding: 154px 33px 64px;
 
     &:not(:last-child) {
       margin-bottom: 0;
     }
 
     &--housing {
-      background: url("../img/icons/housing-desktop.svg") no-repeat center top 60px;
+      background: url("../img/stack.svg#housing-mobile") no-repeat center top 56px / 86px;
     }
 
     &--food {
-      background: url("../img/icons/food-desktop.svg") no-repeat center top 60px;
+      background: url("../img/stack.svg#food-mobile") no-repeat center top 56px / 80px;
     }
 
     &--souvenirs {
-      background: url("../img/icons/souvenirs-desktop.svg") no-repeat center top 60px;
+      background: url("../img/stack.svg#souvenirs-mobile") no-repeat center top 59px / 84px;
     }
+  }
+
+  .addition__br-tablet {
+    display: block;
   }
 
   .addition__title,
@@ -71,11 +79,24 @@
 
   .addition__title {
     font-size: 21px;
+    margin-bottom: 24px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 980px) {
   .addition__item {
     padding: 170px 50px 67px;
+
+    &--housing {
+      background: url("../img/stack.svg#housing-mobile") no-repeat center top 65px / 88px;
+    }
+
+    &--food {
+      background: url("../img/stack.svg#food-desktop") no-repeat center top 70px / 74px;
+    }
+
+    &--souvenirs {
+      background: url("../img/stack.svg#souvenirs-desktop") no-repeat center top 69px / 82px;
+    }
   }
 }

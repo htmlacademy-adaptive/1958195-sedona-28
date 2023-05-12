@@ -4,6 +4,7 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import svgSprite from 'gulp-svg-sprite';
 
 // Styles
 
@@ -16,6 +17,18 @@ export const styles = () => {
     ]))
     .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
+}
+
+export const sprite = () => {
+  return gulp.src('source/img/icons/*.svg')
+    .pipe(svgSprite({
+      mode: {
+        stack: {
+          sprite: "../stack.svg"
+        }
+      }
+    }))
+    .pipe(gulp.dest('source/img'));
 }
 
 // Server
