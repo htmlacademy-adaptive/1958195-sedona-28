@@ -1,5 +1,9 @@
 @use "./base/var.scss";
 
+.video__link {
+  display: block;
+}
+
 .video__text-wrapper {
   display: flex;
   flex-direction: column;
@@ -35,6 +39,7 @@
   width: 100%;
   max-width: 800px;
   min-height: 177px;
+  display: block;
 }
 
 .video__play-button {

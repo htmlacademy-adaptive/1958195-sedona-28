@@ -5,7 +5,7 @@
   background-position: center bottom;
 
   &--devider {
-    padding-bottom: 37px;
+    padding-bottom: 26px;
     border-bottom: 1px solid var.$border-color;
   }
 }
@@ -38,7 +38,7 @@
   }
 
   .header-inner__hero {
-    margin-bottom: 61px;
+    margin-bottom: 65px;
   }
 
   .header-inner__content-wrapper {
@@ -49,6 +49,10 @@
     font-size: 30px;
     line-height: 26px;
     margin-bottom: 33px;
+
+    &--catalog {
+      margin-bottom: 19px;
+    }
   }
 
   .header-inner__description {
@@ -57,7 +61,17 @@
 }
 
 @media (min-width: 980px) {
+  .header-inner__hero {
+    margin-bottom: 98px;
+  }
+
   .header-inner__content-wrapper {
     padding: 0 120px;
+  }
+
+  .header-inner__title {
+    &--catalog {
+      margin-bottom: 33px;
+    }
   }
 }

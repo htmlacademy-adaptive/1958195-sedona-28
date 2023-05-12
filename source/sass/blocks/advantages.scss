@@ -47,11 +47,13 @@
 
   .advantages__title {
     font-size: 21px;
+    margin-bottom: 28px;
   }
 }
 
 @media (min-width: 980px) {
   .advantages__header-wrapper {
     padding: 0 120px;
+    margin-bottom: 45px;
   }
 }

@@ -7,11 +7,11 @@
   align-items: center;
   padding: 90px 19px 85px;
   color: #ffffff;
-  background: url("../img/hero-devider.svg"), url("../img/bg-hero-mobile.jpg");
+  background-image: url("../img/hero-devider.svg"), url("../img/bg-hero-mobile.jpg");
   background-color: var.$color-without-img;
   background-repeat: no-repeat;
-  background-position: center bottom -1px, center top;
-  background-size: fill, cover;
+  background-position: center bottom, center top;
+  background-size: auto, cover;
 
   &--inner {
     padding: 52px 46px 67px;

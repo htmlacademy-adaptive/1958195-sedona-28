@@ -18,30 +18,93 @@
 }
 
 .modal__wrapper {
+  max-width: 640px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 45px 40px 35px;
+  text-align: center;
   background-color: #ffffff;
-}
 
-.modal__text-wrapper {
-  margin-bottom: 28px;
+  &--mistake {
+    max-width: 400px;
+    padding: 45px 50px 35px;
+    margin-bottom: 26px;
+  }
+
+  &--mistake .modal__text-wrapper {
+    margin-bottom: 26px;
+  }
+
+  &--message .modal__text-wrapper {
+    padding: 38px 40px 52px;
+  }
+
+  &--message .modal__button-wrapper {
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
 }
 
 .modal__title {
   margin-bottom: 25px;
-  text-align: center;
 }
 
 .modal__description {
-  text-align: center;
-
   // paragraph overflow
   &:not(:last-child) {
     margin-bottom: 15px;
   }
 }
 
-// .modal__button {
-// }
+.modal__button-wrapper {
+  width: 100%;
+}
+
+.modal__button {
+  width: 100%;
+  padding: 18px 0 14px;
+  font-size: 18px;
+
+  &--mistake {
+    width: 180px;
+  }
+}
+
+@media (min-width: 640px) {
+  .modal__wrapper {
+    &--mistake {
+      padding: 48px 50px;
+    }
+
+    &--mistake .modal__text-wrapper {
+      margin-bottom: 48px;
+    }
+
+    &--message .modal__text-wrapper {
+      padding: 51px 100px 53px;
+    }
+
+    &--message .modal__button-wrapper {
+      padding: 44px 91px;
+      background-color: #f2f2f2;
+    }
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 29px;
+
+    &--mistake {
+      margin-bottom: 23px;
+    }
+  }
+
+  .modal__button {
+    font-size: 21px;
+
+    &--mistake {
+      width: 272px;
+    }
+  }
+}

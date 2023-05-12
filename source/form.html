@@ -43,49 +43,51 @@
             <img class="hero__img" width="229" height="39" src="img/SEDONA.svg" alt="Надпись седона.">
           </div>
           <div class="header-inner__content-wrapper">
-            <h1 class="header-inner__title title">Оставьте свой отзыв</h1>
+            <h1 class="header-inner__title header-inner__title--catalog title">Оставьте свой отзыв</h1>
             <p class="header-inner__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br class="br"> а также о посещенных вами достопримечательностях.</p>
           </div>
         </section>
         <form class="main__form form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__group form__group--name form__group--devider">
-            <legend class="form__legend title">
-              <span class="form__legend-text">Представтесь:</span>
-            </legend>
-            <ul class="form__list">
-              <li class="form__item">
-                <label class="form__label form__label--name" for="name">Имя*:</label>
-                <input class="form__input input" type="text" id="name" name="name" placeholder="Введите имя" required>
-              </li>
-              <li class="form__item">
-                <label class="form__label form__label--name" for="second-name">Фамилия*:</label>
-                <input class="form__input input" type="text" id="second-name" name="second-name" placeholder="Введите фамилию" required>
-              </li>
-              <li class="form__item">
-                <label class="form__label form__label--name" for="patronymic">Отчество:</label>
-                <input class="form__input input" type="text" id="patronymic" name="patronymic" placeholder="Введите отчество">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__group form__group--contact form__group--devider">
-            <legend class="form__legend title">
-              <span class="form__legend-text">Контактная информация:</span>
-            </legend>
-            <ul class="form__list">
-              <li class="form__item">
-                <label class="form__label form__label--contact" for="phone">Контактный телефон*:</label>
-                <input class="form__input input input--phone" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
-              </li>
-              <li class="form__item">
-                <label class="form__label form__label--contact" for="e-mail">Электронная почта*:</label>
-                <input class="form__input input input--mail" type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail" required>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="form__fieldset-wrapper">
+            <fieldset class="form__group form__group--name form__group--devider">
+              <legend class="form__legend title">
+                <span class="form__legend-text">Представьтесь:</span>
+              </legend>
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__label form__label--name" for="name">Имя*:</label>
+                  <input class="form__input input" type="text" id="name" name="name" placeholder="Введите имя" required>
+                </li>
+                <li class="form__item">
+                  <label class="form__label form__label--name" for="second-name">Фамилия*:</label>
+                  <input class="form__input input" type="text" id="second-name" name="second-name" placeholder="Введите фамилию" required>
+                </li>
+                <li class="form__item">
+                  <label class="form__label form__label--name" for="patronymic">Отчество:</label>
+                  <input class="form__input input" type="text" id="patronymic" name="patronymic" placeholder="Введите отчество">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__group form__group--contact form__group--devider">
+              <legend class="form__legend title">
+                <span class="form__legend-text">Контактная информация:</span>
+              </legend>
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__label form__label--contact" for="phone">Контактный телефон*:</label>
+                  <input class="form__input input input--phone" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+                </li>
+                <li class="form__item">
+                  <label class="form__label form__label--contact" for="e-mail">Электронная почта*:</label>
+                  <input class="form__input input input--mail" type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail" required>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="form__group form__group--impression form__group--devider">
             <legend class="form__legend title">
               <span class="form__legend-text">Ваше общее впечатление:</span></legend>
-            <ul class="form__list">
+            <ul class="form__list form__list--impression">
               <li class="form__item">
                 <input class="form__control-input visually-hidden" type="radio" id="positive" name="impression" value="positive" checked>
                 <label class="form__label" for="positive">Скорее положительное</label>
@@ -103,7 +105,7 @@
           <fieldset class="form__group form__group--attractions form__group--devider">
             <legend class="form__legend title">
               <span class="form__legend-text">Посещенные<br class="br"> достопримечательности:</span></legend>
-            <ul class="form__list">
+            <ul class="form__list form__list--attractions">
               <li class="form__item">
                 <input class="form__control-input visually-hidden" type="checkbox" id="devils-bridge" name="devils-bridge" checked>
                 <span class="form__mark"></span>
@@ -130,7 +132,7 @@
             <legend class="form__legend title">
               <span class="form__legend-text">Опишите свои эмоции:</span>
             </legend>
-            <textarea class="form__textarea input" id="emotions" name="emotions"></textarea>
+            <textarea class="form__textarea input" id="emotions" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="form__button-wrapper">
             <button class="form__button button" type="submit">Отправить отзыв</button>
@@ -169,22 +171,24 @@
     </div>
     <!-- Модальное окно с ошибкой -->
     <div class="modal modal--mistake"> <!-- Чтобы открыть модальное окно - добавить класс "modal--mistake-active"-->
-      <section class="modal__wrapper">
+      <section class="modal__wrapper modal__wrapper--mistake">
         <div class="modal__text-wrapper">
-          <h2 class="modal__title title">Что то пошло не так!</h2>
+          <h2 class="modal__title modal__title--mistake title">Что-то пошло не&nbsp;так!</h2>
           <p class="modal__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         </div>
-        <button class="modal__button button" type="button">OK</button>
+        <button class="modal__button modal__button--mistake button" type="button">OK</button>
       </section>
     </div>
     <!-- Модальное окно с сообщением -->
     <div class="modal modal--message"> <!-- Чтобы открыть модальное окно - добавить класс "modal--message-active" -->
-      <section class="modal__wrapper">
+      <section class="modal__wrapper modal__wrapper--message">
         <div class="modal__text-wrapper">
           <h2 class="modal__title title">Ваш отзыв отправлен!</h2>
-          <p class="modal__description description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          <p class="modal__description description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
         </div>
-        <button class="modal__button button" type="button">Закрыть окно</button>
+        <div class="modal__button-wrapper">
+          <button class="modal__button button" type="button">Закрыть окно</button>
+        </div>
       </section>
     </div>
     <script src="js/script.js"></script>

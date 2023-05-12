@@ -7,18 +7,18 @@
   font-weight: 700;
   color: var.$input-text-color;
   width: 100%;
-  padding: 12px;
+  padding: 16px;
   border: none;
   background-color: var.$input-bg-color;
 
   &--phone {
     padding-right: 74px;
-    background: var.$input-bg-color url("../img/icons/phone.svg") no-repeat top 50% right;
+    background: var.$input-bg-color url("../img/stack.svg#phone") no-repeat top right -2px / 62px;
   }
 
   &--mail {
     padding-right: 74px;
-    background: var.$input-bg-color url("../img/icons/mail.svg") no-repeat top 50% right;
+    background: var.$input-bg-color url("../img/stack.svg#mail") no-repeat top right -2px / 62px;
   }
 
   &:hover {

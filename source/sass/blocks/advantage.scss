@@ -29,6 +29,10 @@
   }
 }
 
+.advantage__br-tablet {
+  display: none;
+}
+
 .advantage__text-wrapper {
   display: flex;
   flex-direction: column;
@@ -108,13 +112,17 @@
     }
   }
 
+  .advantage__br-tablet {
+    display: block;
+  }
+
   .advantage__content-wrapper::before {
     transform: scale(0);
   }
 
   .advantage__text-wrapper,
   .advantage__item--town .advantage__text-wrapper {
-    padding: 52px 33px 31px 33px;
+    padding: 54px 33px 31px 33px;
   }
 
   .advantage__item-wrapper {
@@ -126,7 +134,11 @@
   .advantage__title {
     font-size: 21px;
     max-width: 150px;
-    margin-bottom: 11px;
+    margin-bottom: 14px;
+  }
+
+  .advantage__number {
+    margin-bottom: 22px;
   }
 
   .advantage__item--town .advantage__item-wrapper {
@@ -139,14 +151,19 @@
   }
 
   .advantage__item--devil-bridge .advantage__text-wrapper {
+    padding: 52px 33px 31px 33px;
     order: 2;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 980px) {
   .advantage__text-wrapper,
   .advantage__item--town .advantage__text-wrapper,
   .advantage__item--simple {
-    padding: 52px 50px;
+    padding: 53px 58px 51px;
+  }
+
+  .advantage__item--devil-bridge .advantage__text-wrapper {
+    padding: 54px 84px 50px;
   }
 }
