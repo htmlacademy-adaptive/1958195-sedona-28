@@ -8,12 +8,17 @@
     "browser-sync": "2.27.7",
     "gulp": "^4.0.2",
     "gulp-dart-sass": "^1.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-libsquoosh": "^1.1.2",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
+    "gulp-rename": "^2.0.0",
     "gulp-svg-sprite": "^1.5.0",
+    "gulp-terser": "^2.1.0",
     "node": "^16.9.0",
     "npm": "^7.21.1",
     "postcss": "8.3.11",
+    "postcss-csso": "^6.0.1",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.11"
   },
@@ -23,7 +28,11 @@
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
     "start": "gulp",
-    "sprite": "gulp sprite"
+    "sprite": "gulp sprite",
+    "html": "gulp htmlmin",
+    "script": "gulp terser",
+    "images": "gulp libsquoosh",
+    "createWebp": "gulp libsquoosh"
   },
   "browserslist": [
     "last 2 versions",
