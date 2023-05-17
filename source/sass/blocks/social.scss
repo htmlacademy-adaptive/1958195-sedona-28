@@ -17,16 +17,17 @@
   height: 48px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 24px;
 
   &--vk {
-    background-image: url("../img/icons/vk.svg");
+    background-image: url("../img/stack.svg#vk");
   }
 
   &--telegram {
-    background-image: url("../img/icons/telegram.svg");
+    background-image: url("../img/stack.svg#telegram");
   }
 
   &--youtube {
-    background-image: url("../img/icons/youtube.svg");
+    background-image: url("../img/stack.svg#youtube");
   }
 }
