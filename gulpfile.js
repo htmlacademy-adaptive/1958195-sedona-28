@@ -11,7 +11,7 @@ import autoprefixer from 'autoprefixer';
 import svgo from 'gulp-svgmin';
 import svgSprite from 'gulp-svg-sprite';
 import del from 'del';
-import browser from 'browser-sync';
+import browser, { reload } from 'browser-sync';
 
 
 // Styles

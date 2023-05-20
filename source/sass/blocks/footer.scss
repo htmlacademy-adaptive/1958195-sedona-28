@@ -61,7 +61,7 @@
   text-transform: uppercase;
   color: var.$base-title-color;
   padding: 10px 40px 10px 0;
-  background: url("../img/stack.svg#htmlacademy") no-repeat center right / 35px 28px;
+  background: url("../img/stack.svg#htmlacademy") no-repeat center right -6px / 39px;
 
   &:hover {
     opacity: 0.8;
@@ -95,6 +95,7 @@
 @media (min-width: 768px) {
   .footer {
     display: grid;
+    gap: 20px;
     grid-template-columns: 1fr 264px 1fr;
   }
 
