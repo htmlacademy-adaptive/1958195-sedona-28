@@ -93,7 +93,7 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
-    'source/img/favicons',
+    'source/img/favicons/*.{png,svg}',
     'source/manifest.webmanifest',
   ], {
     base: 'source'
@@ -126,7 +126,8 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/**/*.js', gulp.series(script));
+  gulp.watch('source/*.html', html).on('change', browser.reload);
 }
 
 //Build
