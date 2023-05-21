@@ -53,6 +53,7 @@
 
 .form__legend-text {
   margin: 0;
+  max-width: 350px;
 }
 
 .form__list {
@@ -387,17 +388,12 @@
   }
 
   .form__group--impression .form__list {
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(3, auto);
     gap: 64px;
-    flex-direction: row;
-    justify-content: space-between;
   }
 
   .form__group--attractions .form__list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    grid-template-columns: repeat(4, auto);
     gap: 64px;
   }
 
