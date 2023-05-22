@@ -52,12 +52,14 @@
 }
 
 .form__legend-text {
+  display: inline-block;
   margin: 0;
   max-width: 350px;
 }
 
 .form__list {
   @include mixins.list-reset;
+  align-items: center;
 }
 
 .form__item {
@@ -138,7 +140,8 @@
   width: 22px;
   height: 22px;
   left: 12px;
-  top: 10px;
+  top: 50%;
+  transform: translateY(-50%);
   background: url("../img/stack.svg#tick") no-repeat;
 }
 

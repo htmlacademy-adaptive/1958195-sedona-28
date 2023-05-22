@@ -5,8 +5,15 @@
   background-position: center bottom;
 
   &--devider {
-    padding-bottom: 26px;
     border-bottom: 1px solid var.$border-color;
+  }
+
+  &--devider-catalog {
+    padding-bottom: 37px;
+  }
+
+  &--devider-form {
+    padding-bottom: 26px;
   }
 }
 
